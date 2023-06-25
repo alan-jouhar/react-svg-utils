@@ -12,31 +12,26 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary: Story = {
+export const Cairo: Story = {
   args: {
-    label: "Button",
-    color: "green",
+    timeZone: "Africa/Cairo",
+    brand: "CAIRO",
+    side: 200,
   },
 };
 
-export const Secondary: Story = {
+export const Berlin: Story = {
   args: {
-    label: "Button",
-    color: "green",
+    timeZone: "Europe/Berlin",
+    brand: "BERLILN",
+    side: 300,
   },
 };
 
-export const Large: Story = {
+export const Australia: Story = {
   args: {
-    label: "Button",
-    color: "green",
-  },
-};
-
-export const Small: Story = {
-  args: {
-    label: "Button",
-    color: "green",
+    timeZone: "Australia/Melbourne",
+    brand: "Melbourne",
+    side: 500,
   },
 };

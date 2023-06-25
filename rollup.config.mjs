@@ -12,6 +12,7 @@ import { createRequire } from "node:module";
 const requireFile = createRequire(import.meta.url);
 const packageJson = requireFile("./package.json");
 import json from "@rollup/plugin-json";
+import scss from "rollup-plugin-scss";
 
 export default [
   {
@@ -34,6 +35,7 @@ export default [
       commonjs(),
       typescript(),
       json(),
+      scss(),
       postcss({
         extensions: [".css"],
       }),
